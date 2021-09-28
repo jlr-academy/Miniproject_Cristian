@@ -33,7 +33,7 @@ class interface():
             return -1
     
     def write_to_file(self, file_content):
-        f = open('List_of_products.txt', 'w')
+        f = open('Products.txt', 'w')
         if len(file_content) > 0:
             f.write(file_content[0])
             for x in range(1, len(file_content)):
@@ -43,7 +43,7 @@ class interface():
     
     def check_if_file_exists(self):
         try:
-            f = open('List_of_products.txt', 'r+')
+            f = open('Products.txt', 'r+')
             file_content = [x.replace('\n','') for x in f.readlines()]
             f.close()
             return file_content
@@ -83,13 +83,13 @@ class interface():
                 print('')
                 file_content = self.check_if_file_exists()
                 if file_content == False:
-                    f = open('List_of_products.txt', 'a')
+                    f = open('Products.txt', 'a')
                     f.write(product_to_add)
                     f.close()
                     system(clear_command)
                     print('Product added succesfully.\n')
                 elif product_to_add not in file_content:
-                    f = open('List_of_products.txt', 'a')
+                    f = open('Products.txt', 'a')
                     if len(file_content) != 0:
                         f.write('\n')
                     f.write(product_to_add)
@@ -111,8 +111,6 @@ class interface():
                     except ValueError:
                         system(clear_command)
                         print('The item you have inputted is not in the list.\n')
-                        self.product_menu()
-                        return
                     file_content[file_content.index(product_to_replace)] = new_product
                     status =  self.write_to_file(file_content)
                     if status == 1:
