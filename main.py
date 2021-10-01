@@ -1,6 +1,6 @@
 from os import system
 from os_checker import clear_command
-from products import edit_menu
+from edit_menu import edit_menu
 from auxiliary_functions import check_if_input_is_a_menu_option, write_to_file
 
 clear_command = clear_command()
