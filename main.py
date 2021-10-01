@@ -32,7 +32,7 @@ class App:
                 if self.operation_mode == 'fast':
                     if 'products_file_content' in locals():
                         write_to_file('Products.txt', products_file_content)
-                    elif 'curiers_file_content' in locals():
+                    if 'curiers_file_content' in locals():
                         write_to_file('Curiers.txt', curiers_file_content)
                 exit()
             elif user_input == 1:
