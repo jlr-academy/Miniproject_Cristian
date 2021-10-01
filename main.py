@@ -15,13 +15,13 @@ class App:
 [0] Quit\n\
 [1] Product menu\n\
 [2] Couriers menu\n\
-[3] Switch to safe operation')
+[3] Switch to safe operation\n')
             elif self.operation_mode == 'safe':
                 print('Main menu:\n\
 [0] Quit\n\
 [1] Product menu\n\
 [2] Couriers menu\n\
-[3] Switch to fast operation')
+[3] Switch to fast operation\n')
             
             user_input = check_if_input_is_a_menu_option([0, 1, 2, 3])
 
