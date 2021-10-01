@@ -1,6 +1,6 @@
 from os import system
 from os_checker import clear_command
-from products import edit_menu
+from edit_menu import edit_menu
 from auxiliary_functions import check_if_input_is_a_menu_option, write_to_file
 
 clear_command = clear_command()
@@ -15,13 +15,13 @@ class App:
 [0] Quit\n\
 [1] Product menu\n\
 [2] Couriers menu\n\
-[3] Switch to safe operation')
+[3] Switch to safe operation\n')
             elif self.operation_mode == 'safe':
                 print('Main menu:\n\
 [0] Quit\n\
 [1] Product menu\n\
 [2] Couriers menu\n\
-[3] Switch to fast operation')
+[3] Switch to fast operation\n')
             
             user_input = check_if_input_is_a_menu_option([0, 1, 2, 3])
 
