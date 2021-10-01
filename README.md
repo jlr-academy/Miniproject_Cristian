@@ -15,3 +15,7 @@ Only Python 3
 - A courier should just be a string containing its name, i.e: "John"
 - A list of couriers should be a list of strings , i.e: ["John"]
 - Data should be persisted to a .txt file on a new line for each courier or product , ie:
+
+## Aknowledgements
+
+I would like to thank Google for all the help support and patience provided during this project.
