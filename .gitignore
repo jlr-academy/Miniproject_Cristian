@@ -1,0 +1,13 @@
+.venv
+Indexes.csv
+Products.csv
+Couriers.csv
+Orders.csv
+.DS_Store
+__pycache__
+.pytest_cache
+Dockerfile
+Dockerfile_example
+test.py
+list_of_possible_statuses.txt
+Notes.txt
